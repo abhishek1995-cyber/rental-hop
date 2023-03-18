@@ -9,7 +9,7 @@ import "../styles/index.css"
 function App() {
     return <>
         <Header />
-        <Login />
+        <Product />
         <Footer />
     </>
     

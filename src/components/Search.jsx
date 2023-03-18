@@ -9,10 +9,15 @@ function Search() {
     const res= await fetch("http://139.59.81.203/api/get-cities",
     {
       method: "POST",
-      body: { city_id : 6104 },
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
     }
     );
     console.log(res);
+    const data = await res.json()
+    console.log(data);
   }
   data();
   return (

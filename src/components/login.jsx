@@ -5,14 +5,25 @@ function Login() {
   const [password, setPassword] = useState("");
   const handleLogin = async (e) => {
     e.preventDefault();
+    let d = {
+      email: email,
+      password: password,
+      
+    }
     console.log(email, password);
-    const res = await fetch("https://139.59.81.203/api/login", {
-      method: "POST", 
-      body: { email, password },
+    const res = await fetch("http://139.59.81.203/api/login", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(d)
     });
-   console.log(res);
-   const data = await res.json()
-   
+    console.log(res, "res");
+    const data = await res.json()
+
+    console.log(data)
+
     return;
   };
   return (
