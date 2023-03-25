@@ -805,100 +805,12 @@ kbd kbd {
     padding-left: 0.75rem;
 }
 
-/* @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-} */
 
-/* @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-    
-    
-    .price-hr{
-        color: #A8A0A0;
-    }
-    .book-loc{
-        color: #41B823;
-    }
-    .book-loc-mul{
-        color: #3169F6;
-    }
-    .bg-check{
-        background-color: #3169F6;
-    }
-    .book-theme{
-        color: #F08319;
-    }
-   
-    #checkout-detail{
-        position: fixed;
-        width: 280px !important;
-    }
-    .filter-web{
-        display: none !important;
-    }
-    .insta-col-1{
-        margin-right: 20px;
-    }
-    .social-link{
-        margin-left: 200px;
-    }
-    .mobile-foot{
-        display: none;
-    }
-} */
 
-/* @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-    
-    .instagram-wrap{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .instagram-lite{
-        margin:10px
-    }
-    .margin-bottom {
-        margin: 0px !important;    
-    }
-    .price-hr{
-        color: #A8A0A0;
-    }
-    .book-loc{
-        color: #41B823;
-    }
-    .book-loc-mul{
-        color: #3169F6;
-    }
-    .bg-check{
-        background-color: #3169F6;
-    }
-    .book-theme{
-        color: #F08319;
-    }
-    
-    .social-link{
-        margin-left: 200px;
-        color: #999999;
-    }
-    .insta-mobile{
-        display: none;
-    }
-    .mobile-foot{
-        display: none;
-    }
-} */
 
-/* @media (max-width: 1280px) { */
-    .container {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-    }
+/* changes made by developer */
+
+
     .instagram-wrap{
         display: flex;
         flex-wrap: nowrap;
@@ -916,7 +828,7 @@ kbd kbd {
     .bg-tab{
         background-color: #ECECF3;
     }
-    .book-detail{
+    .border-line-bottom{
         border-bottom: 1px solid #6300A3 !important;
         margin: 0 auto; 
     }
@@ -947,12 +859,7 @@ kbd kbd {
     .search-btn{
         width: 300px;
     }
-    #checkout-detail{
-        position: sticky;
-        top: 30px;
-        width: 280px !important;
-       
-    }
+    
     .padd-icon{
         padding: 0px 80px;
     }
@@ -994,7 +901,23 @@ kbd kbd {
     .filter-icon{
         display: none ;
     }
+    .sidebar_deskview{
+        position: fixed;
+        right: 18%;
+        width:350px;
+        
+    }
+    
+    .sidebar_stick{
+        display: none;
+    }
 /* } */
+
+
+
+
+
+
 
 .row {
     display: -ms-flexbox;
@@ -12389,7 +12312,7 @@ a.tag-addon:hover {
 
 .sticky-wrapper {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     box-shadow: 0px 0px 4px;
@@ -13966,9 +13889,7 @@ textarea[cols] {
     .view-mb{
         display: none;
     }
-    .pt-9{
-        padding-top: 2rem !important;
-    }
+   
     .insta-mobile{
         display: flex;
         padding: 10px 5px;
@@ -13977,7 +13898,7 @@ textarea[cols] {
         margin-left: 150px;
         flex-direction: column;
     }
-    .book-detail{
+    .border-line-bottom{
         border-bottom: 1px solid #6300A3 !important;
         margin: 0 auto;   
     }
@@ -13986,6 +13907,9 @@ textarea[cols] {
     }
     .ms-6{
         margin-left: 0px !important;
+    }
+    .sm-p0{
+        padding: 0px !important;
     }
     .margin-left-sm{
         margin-left: 1.5rem !important;
@@ -13996,9 +13920,8 @@ textarea[cols] {
     .bg-tab{
         background-color: #ECECF3;
     }
-    .book-detail{
-        border-bottom: 1px solid #6300A3 !important;
-        margin: 0 auto;     
+    .border-line-bottom{
+        border-bottom: 1px solid #6300A3 !important;     
     }
     
     .price-hr{
@@ -14061,6 +13984,9 @@ textarea[cols] {
     .margin-bottom{
         margin-bottom: 1rem;
     }
+    .sidebar_deskview{
+        display: none;
+    }
     .mobile-foot{
         display: block;
         background-color: #fff;
@@ -14085,7 +14011,7 @@ textarea[cols] {
     font-weight:900;
     font-size: 20px;
     }
-}
+
 
 #index-video .index-video-container {
     position: relative;
@@ -30981,7 +30907,7 @@ video {
 }
 
 /* Extra @Media Query*/
-@media only screen and (min-width: 992px) and (max-width: 1162px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1162px) {
     .horizontalMenu>.horizontalMenu-list>li>a {
         padding-left: 12px;
         padding-right: 12px;
@@ -30995,7 +30921,7 @@ video {
         padding-left: 22px;
         padding-right: 22px;
     }
-}
+} */
 
 @media (max-width: 992px) {
     .horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .megamenu-content {
@@ -31013,6 +30939,20 @@ video {
 
     .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li ul.sub-menu>li>a {
         margin: 0;
+    }
+    .mobile-foot{
+        display: block;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        box-shadow: 2px 3px 4.7px 0.3px;
+        
+    }
+    .sidebar_deskview{
+        display: none;
     }
 }
 
@@ -31201,7 +31141,7 @@ video {
     }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .sticky-wrapper.is-sticky .horizontal-main.hozontal-submenu-spacing {
         height: 72px !important;
     }
@@ -31220,7 +31160,7 @@ video {
     .hozontal-submenu-spacing .horizontalMenu>.horizontalMenu-list>li>ul.sub-menu {
         top: 60px;
     }
-}
+} */
 
 /*----- Icons Style -----*/
 .icon-absolute {
@@ -46902,7 +46842,7 @@ body.dark-theme {
     color: var(--dark-color);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
     .dark-theme .wizard.vertical>.actions {
         border-left: 1px solid var(--dark-border);
     }
@@ -60083,12 +60023,15 @@ button.bg-lime:hover {
 }
 
 .position-fixed {
-    position: fixed !important;
+    position: sticky !important;
+    width: 350px;
+    right: 80px;   
 }
 
 .position-sticky {
     position: -webkit-sticky !important;
     position: sticky !important;
+   
 }
 
 .fixed-top {
@@ -60097,6 +60040,7 @@ button.bg-lime:hover {
     right: 0;
     left: 0;
     z-index: 1030;
+    box-shadow: 2px 3px 2.7px 0.3px rgba(0, 0, 0, 0.24);
 }
 
 .fixed-bottom {
@@ -60106,6 +60050,7 @@ button.bg-lime:hover {
     left: 0;
     z-index: 1030;
 }
+
 
 @supports (position: -webkit-sticky) or (position: sticky) {
     .sticky-top {

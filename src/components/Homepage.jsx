@@ -86,7 +86,7 @@ function Homepage() {
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-12 mb-0">
                               <a
-                                href="javascript:void(0);"
+                                href=""
                                 className="btn btn-lg btn-block btn-primary waves-effect waves-light br-ts-md-0 br-bs-md-0"
                               >
                                 Search Here
@@ -296,7 +296,7 @@ function Homepage() {
                           <span className="fs-10">24 hrs</span>{" "}
                         </a>
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
                           data-bs-toggle="modal"
                           data-bs-target="#owner"
@@ -396,7 +396,7 @@ function Homepage() {
                           <span className="fs-10">24 hrs</span>{" "}
                         </a>
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
                           data-bs-toggle="modal"
                           data-bs-target="#owner"
@@ -496,7 +496,7 @@ function Homepage() {
                           <span className="fs-10">24 hrs</span>{" "}
                         </a>
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
                           data-bs-toggle="modal"
                           data-bs-target="#owner"
@@ -597,7 +597,7 @@ function Homepage() {
                         </a>
                         <li />
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
                           data-bs-toggle="modal"
                           data-bs-target="#owner"
@@ -698,7 +698,7 @@ function Homepage() {
                         </a>
                         <li />
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
                           data-bs-toggle="modal"
                           data-bs-target="#owner"
@@ -1125,15 +1125,15 @@ function Homepage() {
 								</div>
 								<div class="card-body p-1">
 									<div class="item7-card-desc flex mb-1 fs-11 ">
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Dec-03-2021</a>
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Dec-03-2021</a>
+										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
 										<div class="ms-auto">
-											<a href="javascript:void(0);" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>4 Comments</a>
+											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>4 Comments</a>
 										</div>
 									</div>
-									<a href="javascript:void(0);" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Apartment For Rent</h4></a>
+									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Apartment For Rent</h4></a>
 									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem	</p>
-									<a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1145,15 +1145,15 @@ function Homepage() {
 								</div>
 								<div class="card-body p-1">
 									<div class="item7-card-desc d-flex mb-1 fs-11">
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Nov-28-2021</a>
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Nov-28-2021</a>
+										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
 										<div class="ms-auto">
-											<a href="javascript:void(0);" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>2 Comments</a>
+											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>2 Comments</a>
 										</div>
 									</div>
-									<a href="javascript:void(0);" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Home  For Rent</h4></a>
+									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Home  For Rent</h4></a>
 									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
-									<a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1165,15 +1165,15 @@ function Homepage() {
 								</div>
 								<div class="card-body p-1">
 									<div class="item7-card-desc d-flex mb-1 fs-11">
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Nov-19-2021</a>
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Nov-19-2021</a>
+										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
 										<div class="ms-auto">
-											<a href="javascript:void(0);" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>8 Comments</a>
+											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>8 Comments</a>
 										</div>
 									</div>
-									<a href="javascript:void(0);" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Luxury Home  For Rent</h4></a>
+									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Luxury Home  For Rent</h4></a>
 									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
-									<a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1186,15 +1186,15 @@ function Homepage() {
 								</div>
 								<div class="card-body p-1">
 									<div class="item7-card-desc d-flex mb-1 fs-11">
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Dec-10-2021</a>
-										<a href="javascript:void(0);" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Dec-10-2021</a>
+										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
 										<div class="ms-auto">
-											<a href="javascript:void(0);" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>1 Comments</a>
+											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>1 Comments</a>
 										</div>
 									</div>
-									<a href="javascript:void(0);" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Deluxe House For Rent</h4></a>
+									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Deluxe House For Rent</h4></a>
 									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
-									<a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1222,9 +1222,9 @@ function Homepage() {
 							</div>
 							<div class="text-wrap mt-5">
 								<div class="btn-list">
-									<a href="javascript:void(0);" class="btn btn-primary btn-lg mb-sm-0 waves-effect waves-light"><i class="fa fa-apple fa-1x me-2"></i> App Store</a>
-									<a href="javascript:void(0);" class="btn btn-secondary btn-lg mb-sm-0 waves-effect waves-light"><i class="fa fa-android fa-1x me-2"></i> Google Play</a>
-									<a href="javascript:void(0);" class="btn btn-success btn-lg mb-0 waves-effect waves-light"><i class="fa fa-windows fa-1x me-2"></i> Windows</a>
+									<a href="" class="btn btn-primary btn-lg mb-sm-0 waves-effect waves-light"><i class="fa fa-apple fa-1x me-2"></i> App Store</a>
+									<a href="" class="btn btn-secondary btn-lg mb-sm-0 waves-effect waves-light"><i class="fa fa-android fa-1x me-2"></i> Google Play</a>
+									<a href="" class="btn btn-success btn-lg mb-0 waves-effect waves-light"><i class="fa fa-windows fa-1x me-2"></i> Windows</a>
 								</div>
 							</div>
 						</div>

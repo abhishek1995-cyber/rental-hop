@@ -88,7 +88,7 @@ function Login() {
                     <div className="">
                       <div className="btn-group">
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="social-icon-style-circle-lg text-primary bg-primary-transparent"
                         >
                           <i className="fa fa-facebook"></i>
@@ -96,7 +96,7 @@ function Login() {
                       </div>
                       <div className="btn-group">
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="social-icon-style-circle-lg text-primary bg-primary-transparent"
                         >
                           <i className="fa fa-google"></i>
@@ -104,7 +104,7 @@ function Login() {
                       </div>
                       <div className="btn-group">
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="social-icon-style-circle-lg text-primary bg-primary-transparent"
                         >
                           <i className="fa fa-twitter"></i>
@@ -112,7 +112,7 @@ function Login() {
                       </div>
                       <div className="btn-group">
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="social-icon-style-circle-lg text-primary bg-primary-transparent"
                         >
                           <i className="fa fa-linkedin"></i>
@@ -120,7 +120,7 @@ function Login() {
                       </div>
                       <div className="btn-group">
                         <a
-                          href="javascript:void(0);"
+                          href=""
                           className="social-icon-style-circle-lg text-primary bg-primary-transparent"
                         >
                           <i className="fa fa-github"></i>

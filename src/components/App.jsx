@@ -4,12 +4,13 @@ import Homepage from "./Homepage";
 import Footer from "./Footer";
 import Login from "./login";
 import Product from "./Product";
+import Product_Detail from "./Product_Detail";
 import "../styles/index.css"
 
 function App() {
     return <>
         <Header />
-        <Product />
+        <Product_Detail/>
         <Footer />
     </>
     

@@ -8,21 +8,21 @@ function Footer(){
 					    <div className="py-5 footer-links border-bottom-0">
 							<h5 className="mb-4 mt-0 text-white fs-20">Popular Locations Properties</h5>
 							<div className="footer-links  border-bottom-0">
-								<a href="javascript:void(0);" className="btn btn-link">Residential Rent in America</a>
-								<a href="javascript:void(0);" className="btn btn-link">Office Space Lease in Canada</a>
-								<a href="javascript:void(0);" className="btn btn-link">Commercial Land Rent in Australia</a>
-								<a href="javascript:void(0);" className="btn btn-link">Apartments In Paris</a>
-								<a href="javascript:void(0);" className="btn btn-link">Commercial Land Rent inFrance</a>
-								<a href="javascript:void(0);" className="btn btn-link">Residential Rent in Liechtenstein</a>
-								<a href="javascript:void(0);" className="btn btn-link">Office Space Lease in Cuba</a>
-								<a href="javascript:void(0);" className="btn btn-link">Apartments In India</a>
-								<a href="javascript:void(0);" className="btn btn-link">Apartments In  Ireland</a>
-								<a href="javascript:void(0);" className="btn btn-link">Residential Rent in Iceland</a>
-								<a href="javascript:void(0);" className="btn btn-link">Commercial Land Rent in Dubai</a>
-								<a href="javascript:void(0);" className="btn btn-link">Apartments In Spain</a>
-								<a href="javascript:void(0);" className="btn btn-link">Commercial Land Rent in Italy</a>
-								<a href="javascript:void(0);" className="btn btn-link">Commercial Land Rent in Mexico</a>
-								<a href="javascript:void(0);" className="btn btn-link">Office Space Lease in Philippines</a>
+								<a href="" className="btn btn-link">Residential Rent in America</a>
+								<a href="" className="btn btn-link">Office Space Lease in Canada</a>
+								<a href="" className="btn btn-link">Commercial Land Rent in Australia</a>
+								<a href="" className="btn btn-link">Apartments In Paris</a>
+								<a href="" className="btn btn-link">Commercial Land Rent inFrance</a>
+								<a href="" className="btn btn-link">Residential Rent in Liechtenstein</a>
+								<a href="" className="btn btn-link">Office Space Lease in Cuba</a>
+								<a href="" className="btn btn-link">Apartments In India</a>
+								<a href="" className="btn btn-link">Apartments In  Ireland</a>
+								<a href="" className="btn btn-link">Residential Rent in Iceland</a>
+								<a href="" className="btn btn-link">Commercial Land Rent in Dubai</a>
+								<a href="" className="btn btn-link">Apartments In Spain</a>
+								<a href="" className="btn btn-link">Commercial Land Rent in Italy</a>
+								<a href="" className="btn btn-link">Commercial Land Rent in Mexico</a>
+								<a href="" className="btn btn-link">Office Space Lease in Philippines</a>
 							</div>
 						</div>
 					</div>
@@ -34,22 +34,22 @@ function Footer(){
 								<h6 className="mb-2 mt-0">Payment Icons</h6>
 								<ul className="payments mb-0 mt-2 d-inline-block">
 									<li>
-										<a href="javascript:void(0);" className="payments-icon"><i className="fa fa-cc-amex" aria-hidden="true"></i></a>
+										<a href="" className="payments-icon"><i className="fa fa-cc-amex" aria-hidden="true"></i></a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="payments-icon"><i className="fa fa-cc-visa" aria-hidden="true"></i></a>
+										<a href="" className="payments-icon"><i className="fa fa-cc-visa" aria-hidden="true"></i></a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="payments-icon"><i className="fa fa-credit-card-alt" aria-hidden="true"></i></a>
+										<a href="" className="payments-icon"><i className="fa fa-credit-card-alt" aria-hidden="true"></i></a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="payments-icon"><i className="fa fa-cc-mastercard" aria-hidden="true"></i></a>
+										<a href="" className="payments-icon"><i className="fa fa-cc-mastercard" aria-hidden="true"></i></a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="payments-icon"><i className="fa fa-cc-paypal" aria-hidden="true"></i></a>
+										<a href="" className="payments-icon"><i className="fa fa-cc-paypal" aria-hidden="true"></i></a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="payments-icon"><i className="fa fa-cc-discover" aria-hidden="true"></i></a>
+										<a href="" className="payments-icon"><i className="fa fa-cc-discover" aria-hidden="true"></i></a>
 									</li>
 								</ul>
 								<h6 className="mb-2 mt-6">Social Icons</h6>
@@ -74,50 +74,50 @@ function Footer(){
 							<div className="col-xl-2 col-lg-6 col-md-12">
 								<h6 className="mt-6 mt-lg-0">Categories</h6>
 								<ul className="list-unstyled mb-0">
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Residential</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Commercial</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Office Space</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Co-Working Space</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Lands Or Flats</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Residential</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Commercial</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Office Space</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Co-Working Space</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Lands Or Flats</a></li>
 								</ul>
 							</div>
 							<div className="col-xl-2 col-lg-6 col-md-12">
 								<h6 className="mt-6 mt-xl-0">Resources</h6>
 								<ul className="list-unstyled mb-0">
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Help Center</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Terms & Conditions</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Privacy Policy</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Support</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> FAQ's</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Help Center</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Terms & Conditions</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Privacy Policy</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Support</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> FAQ's</a></li>
 								</ul>
 							</div>
 							<div className="col-xl-2 col-lg-6 col-md-12">
 								<h6 className="mt-6 mt-xl-0">Company</h6>
 								<ul className="list-unstyled mb-0">
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Our Team</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Our Team</a></li>
 									<li><a href="contact-us.html"><i className="fe fe-chevron-right me-2 text-white-50"></i> Contact US</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> About Us</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Recent News</a></li>
-									<li><a href="javascript:void(0);"><i className="fe fe-chevron-right me-2 text-white-50"></i> Why Us?</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> About Us</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Recent News</a></li>
+									<li><a href=""><i className="fe fe-chevron-right me-2 text-white-50"></i> Why Us?</a></li>
 								</ul>
 							</div>
 							<div className="col-xl-3 col-lg-6 col-md-12">
 								<h6 className="mt-6 mt-xl-0">Get In Touch</h6>
 								<ul className="list-unstyled mb-0">
 									<li>
-										<a href="javascript:void(0);" className="footer-icon-circle"><i className="fe fe-home me-3 text-white-50"></i> New York, NY 10012, US-52014</a>
+										<a href="" className="footer-icon-circle"><i className="fe fe-home me-3 text-white-50"></i> New York, NY 10012, US-52014</a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="footer-icon-circle"><i className="fe fe-mail me-3 fs-12 text-white-50"></i> info12323@example.com</a>
+										<a href="" className="footer-icon-circle"><i className="fe fe-mail me-3 fs-12 text-white-50"></i> info12323@example.com</a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="footer-icon-circle"><i className="fe fe-mail me-3 fs-12 text-white-50"></i> demo@shifto.com</a>
+										<a href="" className="footer-icon-circle"><i className="fe fe-mail me-3 fs-12 text-white-50"></i> demo@shifto.com</a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="footer-icon-circle"><i className="fe fe-phone me-3 text-white-50"></i> + 01 234 567 88, + 01 234 567 88</a>
+										<a href="" className="footer-icon-circle"><i className="fe fe-phone me-3 text-white-50"></i> + 01 234 567 88, + 01 234 567 88</a>
 									</li>
 									<li>
-										<a href="javascript:void(0);" className="footer-icon-circle"><i className="fe fe-printer me-3 text-white-50"></i> + 01 234 567 89, + 01 234 567 89</a>
+										<a href="" className="footer-icon-circle"><i className="fe fe-printer me-3 text-white-50"></i> + 01 234 567 89, + 01 234 567 89</a>
 									</li>
 								</ul>
 							</div>
@@ -128,7 +128,7 @@ function Footer(){
 					<div className="container">
 						<div className="row d-flex">
 							<div className="col-lg-6 col-sm-12 mt-2 mb-2">
-								Copyright © 2023 <a href="javascript:void(0);" className="fs-14 text-primary">Shifto</a>. Designed with <span className="fa fa-heart text-danger"></span> by <a href="javascript:void(0)" className="text-primary"> Spruko </a> All rights reserved.
+								Copyright © 2023 <a href="" className="fs-14 text-primary">Shifto</a>. Designed with <span className="fa fa-heart text-danger"></span> by <a href="" className="text-primary"> Spruko </a> All rights reserved.
 							</div>
 							<div className="col-lg-6 col-sm-12">
 								<div className="form-group d-flex mb-0 float-lg-end">

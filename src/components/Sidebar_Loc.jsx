@@ -1,233 +1,88 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Popup from "./Popup";
 
-function Sidebar_Loc() {
+function Sidebar_Loc({ cityId, locArr, setLocArr }) {
   const [buttonPopup, setButtonPopup] = useState(false);
 
+  const [locations, setLocations] = useState(null);
+
+  const [ selectedLoc, setSelectedLoc ] = useState([])
+
+
+
+  const getLocation = async (cityId) => {
+    const res = await fetch("http://139.59.81.203/api/get-locations",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ city_id: cityId })
+      }
+    );
+    const data = await res.json()
+   
+    setLocations(data.locations);
+  }
+
+  console.log(selectedLoc,"selected")
+
+  useEffect(() => {
+    getLocation(cityId);
+  }, [cityId])
+  
+  function handleChange(event){
+    const value = event.target.value;
+    const isChecked = event.target.checked;
+    console.log(value,isChecked)
+    
+    if (isChecked) {
+      //Add checked item into checkList
+      setLocArr([...locArr,value]);
+      setSelectedLoc([...selectedLoc, value]);
+    } else {
+      //Remove unchecked item from checkList
+      
+      const filteredList = selectedLoc.filter((item) => item !== value);
+      setLocArr(filteredList)
+      setSelectedLoc(filteredList);
+  }
+  }
   return (
     <>
       <div className="col-xl-3 col-lg-4 col-md-12">
         <div className="card">
           <div className="card-header flex">
             <h3 className="card-title">Locations</h3>
-            <div className=" filter-icon">    
-                <img
-                  src="/assets/images/png/icons8-adjust-50.png"
-                  width="32px" onClick={() => setButtonPopup(true)}
-                />
+            <div className=" filter-icon">
+              <img
+                src="/assets/images/png/icons8-adjust-50.png"
+                width="32px" onClick={() => setButtonPopup(true)}
+              />
               <>
                 <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                   <div className=" card px-3">
                     <div className="filter-product-checkboxs pt-9">
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox1"
-                         
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            {" "}
-                            Residential
-                            <span className="label label-secondary float-end">
-                              14
+
+                      {
+                        locations && locations.map((location) => (
+                          <label className="custom-control form-checkbox mb-1">
+                            <input
+                              type="checkbox"
+                              className="custom-control-input"
+                              name="checkbox1"
+                              
+                            />
+                            <span className="custom-control-label">
+                              <span className="text-dark">
+                                {" "}
+                                {location.location_name}
+                                
+                              </span>
                             </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type=""
-                          className="custom-control-input"
-                          name="checkbox2"
-                          
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Hostels
-                            <span className="label label-secondary float-end">
-                              22
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox3"
-                          
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Office Space
-                            <span className="label label-secondary float-end">
-                              78
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox4"
-                          
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Retail Space
-                            <span className="label label-secondary float-end">
-                              35
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox5"
-                          
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            School Space
-                            <span className="label label-secondary float-end">
-                              23
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox6"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            College Space
-                            <span className="label label-secondary float-end">
-                              14
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Hostel Buildings
-                            <span className="label label-secondary float-end">
-                              45
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Hotels
-                            <span className="label label-secondary float-end">
-                              34
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Ware house
-                            <span className="label label-secondary float-end">
-                              12
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Industrail
-                            <span className="label label-secondary float-end">
-                              18
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Land Or Flots
-                            <span className="label label-secondary float-end">
-                              02
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Co-working Space
-                            <span className="label label-secondary float-end">
-                              25
-                            </span>
-                          </span>
-                        </span>
-                      </label>
-                      <label className="custom-control form-checkbox mb-1">
-                        <input
-                          type="checkbox"
-                          className="custom-control-input"
-                          name="checkbox7"
-                          value=""
-                        />
-                        <span className="custom-control-label">
-                          <span className="text-dark">
-                            Bacheolors
-                            <span className="label label-secondary float-end">
-                              26
-                            </span>
-                          </span>
-                        </span>
-                      </label>
+                          </label>))
+                      }
                     </div>
 
                     <div className="panel panel-default mb-0 border-top border-bottom p-0">
@@ -319,7 +174,7 @@ function Sidebar_Loc() {
                     </div>
                     <div className="card-footer">
                       <a
-                        href="javascript:void(0);"
+                        href=""
                         className="btn btn-primary btn-block waves-effect waves-light"
                       >
                         Apply Filter
@@ -334,215 +189,27 @@ function Sidebar_Loc() {
             <div className="card-body">
               <div className="" id="container">
                 <div className="filter-product-checkboxs">
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox1"
-                      value="option1"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        {" "}
-                        Residential
-                        <span className="label label-secondary float-end">
-                          14
+                  {
+                    locations && locations.map((location) => (
+                      <label className="custom-control form-checkbox mb-3">
+                        <input
+                          type="checkbox"
+                          className="custom-control-input"
+                          name=""
+                          value={location.location_name}
+                          onChange={handleChange}
+                         
+                        />
+                        <span className="custom-control-label">
+                          <span className="text-dark">
+                            {" "}
+                            {location.location_name}
+                            
+                          </span>
                         </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox2"
-                      value="option2"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Hostels
-                        <span className="label label-secondary float-end">
-                          22
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox3"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Office Space
-                        <span className="label label-secondary float-end">
-                          78
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox4"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Retail Space
-                        <span className="label label-secondary float-end">
-                          35
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox5"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        School Space
-                        <span className="label label-secondary float-end">
-                          23
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox6"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        College Space
-                        <span className="label label-secondary float-end">
-                          14
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Hostel Buildings
-                        <span className="label label-secondary float-end">
-                          45
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Hotels
-                        <span className="label label-secondary float-end">
-                          34
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Ware house
-                        <span className="label label-secondary float-end">
-                          12
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Industrail
-                        <span className="label label-secondary float-end">
-                          18
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Land Or Flots
-                        <span className="label label-secondary float-end">
-                          02
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Co-working Space
-                        <span className="label label-secondary float-end">
-                          25
-                        </span>
-                      </span>
-                    </span>
-                  </label>
-                  <label className="custom-control form-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      name="checkbox7"
-                      value="option3"
-                    />
-                    <span className="custom-control-label">
-                      <span className="text-dark">
-                        Bacheolors
-                        <span className="label label-secondary float-end">
-                          26
-                        </span>
-                      </span>
-                    </span>
-                  </label>
+                      </label>))
+                  }
+
                 </div>
               </div>
             </div>
@@ -631,7 +298,7 @@ function Sidebar_Loc() {
             </div>
             <div className="card-footer">
               <a
-                href="javascript:void(0);"
+                href=""
                 className="btn btn-primary btn-block waves-effect waves-light"
               >
                 Apply Filter

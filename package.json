@@ -17,6 +17,7 @@
     "react-rainbow-components": "^1.32.0",
     "react-scripts": "5.0.1",
     "react-sticky": "^6.0.3",
+    "react-sticky-box": "^2.0.0",
     "reactjs-popup": "^2.0.5",
     "rsuite": "^5.28.2",
     "save": "^2.9.0",

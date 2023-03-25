@@ -38,7 +38,7 @@ $(function() {
       strokeWidth: 0,
       strokeColor: '#83829c',
       fill:'#83829c',
-      initialRating: 2,
+      initialRating: 4.5,
       starGradient: {
         start: '#f1c40f',
         end: '#f1c40f'
