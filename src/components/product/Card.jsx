@@ -1,28 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-function Card({ bikes, locArr }) {
-  const [loc, setLoc] = useState("");
-  const [sortedBike, setSortedBike] = useState([bikes]);
-  
-  // function sortedData() {
-  //   let sortData = [...bikes];
-  //   console.log(bikes, "sorderfaskfklsda");
-  //   if (locArr.length > 0) {
-  //     sortData = sortData.filter((bike) =>
-  //       bike.location_name.some((location) => locArr.includes(location))
-  //     );
+function Card({ bikes, activeLocations }) {
+  const [locationId, setLocationId] = useState("");
 
-  //     return setSortedBike(sortData);
-  //   } else {
-  //     setSortedBike(sortData);
-  //   }
-  // }
+  const getDetails = (bike) => {
+    console.log(bike);
+    console.log(locationId);
+  };
 
-  // useEffect(() => {
-  //   sortedData();
-  // }, [locArr]);
 
- 
 
   return (
     <>
@@ -111,21 +97,41 @@ function Card({ bikes, locArr }) {
                             <div class="item-card9 mt-1">
                               <a href="property-details.html" class="text-dark">
                                 <h4 class="font-weight-semibold2 mt-2 mb-2 text-center">
-                                  {bike.vehicle_name}
+                                  {bike.vehicle_name}{" "}
                                 </h4>
                               </a>
                               <div class="mb-1 fs-12">
                                 <select
-                                  onChange={(e) => setLoc(e.target.value)}
-                                  value={loc}
+                                 value={locationId}
+                                
+                                  onClick={(e) =>
+                                    setLocationId(e.target.value)
+                                  }
+                                 
                                   className="w-100 px-3 py-1"
                                   data-placeholder="Select Location"
                                 >
-                                  {bike.price.map((locations) => (
-                                    <option value={locations.location_id}>
-                                      {locations.location_name}
-                                    </option>
-                                  ))}
+                                  {activeLocations.length === 0
+                                    ? bike.price.map((locations) => (
+                                        <option value={locations.location_id}>
+                                          {locations.location_name}
+                                        </option>
+                                      ))
+                                    : bike.price.map((locations) => {
+                                        if (
+                                          activeLocations.includes(
+                                            locations.location_name
+                                          )
+                                        ) {
+                                          return (
+                                            <option
+                                              value={locations.location_id}
+                                            >
+                                              {locations.location_name}
+                                            </option>
+                                          );
+                                        }
+                                      })}
                                 </select>
                               </div>
 
@@ -169,22 +175,20 @@ function Card({ bikes, locArr }) {
                                   <span class="fs-18 ms-1 book-loc-mul font-weight-bold">
                                     <i class="fa fa-inr fs-18"></i>
                                     {bike.price.map((locations) => {
-                                      if (locations.location_id == loc) {
-                                        return locations.weekday_price;
+                                      if (locations.location_id == locationId) {
+                                        return locations.weekday_price + "/ ";
                                       }
                                     })}
-                                    /
                                   </span>
                                   <span class="fs-10">24 hrs</span>{" "}
                                 </a>
-                                <a
-                                  href=""
+                                <button
+                                  onClick={() => getDetails(bike)}
                                   class="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#owner"
+                                  
                                 >
                                   Details
-                                </a>
+                                </button>
                               </div>
                             </div>
                           </div>

@@ -1,6 +1,6 @@
-import Product_detail_Hero from "./Product_Detail_Hero";
-import Product_detail_Footer from "./Product_Detail_Footer";
-import Product_detail_Sidebar from "./Product_Detail_Sidebar";
+import Product_detail_Hero from "../components/Product_Detail_Hero";
+import Product_detail_Footer from "../components/Product_Detail_Footer";
+import Product_detail_Sidebar from "../components/Product_Detail_Sidebar";
 import { useEffect, useLayoutEffect } from "react";
 
 function Product_Detail() {
@@ -24,11 +24,10 @@ function Product_Detail() {
 
   return (
     <>
-      <section className="sptb-sm bg-white  pt-9 mt-3 ">
+      <section className="sptb-sm bg-white mt-7 ">
         <div className="container sm-p0 ">
           <div className="d-flex ">
             <Product_detail_Hero />
-
             <div className="sidebar_deskview ">
               <Product_detail_Sidebar />
             </div>
