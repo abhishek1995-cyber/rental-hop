@@ -67,7 +67,7 @@ function Sidebar({ locations, handleActiveLocations }) {
                                                     <div className="">
                                                         <h6>
                                                             <label
-                                                                for="price"
+                                                                htmlFor="price"
                                                                 className="card-title fs-14 text-default  font-weight-semibold2"
                                                             >
                                                                 Price Range{" "}
@@ -175,7 +175,7 @@ function Sidebar({ locations, handleActiveLocations }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="">
+                        
                             <div className="panel panel-default mb-0 border-top border-bottom p-0">
                                 <div className="panel-heading1">
                                     <h4 className="panel-title1">
@@ -200,7 +200,7 @@ function Sidebar({ locations, handleActiveLocations }) {
                                         <div className="">
                                             <h6>
                                                 <label
-                                                    for="price"
+                                                    htmlFor="price"
                                                     className="card-title fs-14 text-default mb-2 font-weight-semibold2"
                                                 >
                                                     Price Range{" "}
@@ -257,7 +257,7 @@ function Sidebar({ locations, handleActiveLocations }) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    
                         <div className="card-footer">
                             <a
                                 href=""

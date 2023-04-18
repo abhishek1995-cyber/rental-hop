@@ -1,196 +1,306 @@
 import React, { useEffect, useState } from "react";
 
-function Card({ bikes, activeLocations }) {
+function Card(props) {
+  const { bikes, activeLocations, setDaySelected } = props;
   const [locationId, setLocationId] = useState("");
+  const lowerDaySelected = setDaySelected.toLowerCase();
+  console.log(locationId, "bikes")
+
+  var service_found = 0;
+
+  const service_inc =()=>{
+   service_found = 1;
+}
 
   const getDetails = (bike) => {
     console.log(bike);
     console.log(locationId);
   };
 
-
+  
+ 
+  useEffect(()=>{
+    var defaultId;
+    if(bikes)
+    {bikes.map((bike)=>{
+      defaultId=bike.price[0].location_id
+      setLocationId(defaultId)
+    })
+  }
+    
+  }, [bikes])
 
   return (
     <>
-      <div class="col-xl-9 col-lg-8 col-md-12">
-        <div class="card">
-          <div class="item2-gl ">
-            <div class=" item2-gl-nav">
-              <div class="sm-bike-filter ">
-                <label class="selectgroup-item mb-md-0">
+      <div className="col-xl-9 col-lg-8 col-md-12">
+        <div className="card">
+          <div className="item2-gl ">
+            <div className=" item2-gl-nav">
+              <div className="sm-bike-filter ">
+                <label className="selectgroup-item mb-md-0">
                   <input
                     type="radio"
                     name="value"
                     value="All"
-                    class="selectgroup-input"
+                    className="selectgroup-input"
                     checked=""
                   />
-                  <span class="selectgroup-button d-md-flex ">
-                    All <i class="fa fa-sort ms-2 mt-1"></i>
+                  <span className="selectgroup-button d-md-flex ">
+                    All <i className="fa fa-sort ms-2 mt-1"></i>
                   </span>
                 </label>
-                <label class="selectgroup-item mb-md-0">
+                <label className="selectgroup-item mb-md-0">
                   <input
                     type="radio"
                     name="value"
                     value="Distance"
-                    class="selectgroup-input"
+                    className="selectgroup-input"
                   />
-                  <span class="selectgroup-button">Bikes</span>
+                  <span className="selectgroup-button">Bikes</span>
                 </label>
-                <label class="selectgroup-item mb-sm-0">
+                <label className="selectgroup-item mb-sm-0">
                   <input
                     type="radio"
                     name="value"
                     value="Latest"
-                    class="selectgroup-input"
+                    className="selectgroup-input"
                   />
-                  <span class="selectgroup-button">Scooty</span>
+                  <span className="selectgroup-button">Scooty</span>
                 </label>
-                <label class="selectgroup-item mb-0">
+                <label className="selectgroup-item mb-0">
                   <input
                     type="radio"
                     name="value"
                     value="Rating"
-                    class="selectgroup-input"
+                    className="selectgroup-input"
                   />
-                  <span class="selectgroup-button">Superbikes</span>
+                  <span className="selectgroup-button">Superbikes</span>
                 </label>
               </div>
 
               <div>
-                <h6 class="pt-4">Showing 30 entries</h6>
+                <h6 className="pt-4">Showing 30 entries</h6>
               </div>
             </div>
-            <div class="tab-content">
-              <div class="row">
+            <div className="tab-content">
+              <div className="row">
                 {bikes &&
                   bikes.map((bike) => (
-                    <div class="col-lg-12 col-md-12 col-xl-4 ">
-                      <div class="card overflow-hidden box-border1 p-1">
-                        <div class="power-ribbon power-ribbon-top-left text-warning">
-                          <span class="bg-warning">
+                    <div
+                      key={bike.vehicle_id}
+                      className="col-lg-12 col-md-12 col-xl-4 "
+                    >
+                      <div className="card overflow-hidden box-border1 p-1">
+                        <div className="power-ribbon power-ribbon-top-left text-warning">
+                          <span className="bg-warning">
                             <img
-                              src="../assets/images/png/light.png"
-                              class=""
+                              src="/assets/images/png/light.png"
+                              className=""
                               alt=""
                               width="30px"
                             />
                           </span>
                         </div>
-                        <div class=" ">
-                          <div class="">
-                            <div class="item-card9-imgs">
-                              <a href="property-details.html"></a>
-                              <img
-                                src="/assets/images/products/category/bajaj-avenger-cruise-220.jpeg"
-                                alt="img"
-                                class="cover-image pt-4"
-                              />
-                            </div>
-                            <div class="item-tags">
-                              <div class="bg-success tag-option">Hotseller</div>
-                              <div class="bg-success tag-option">Cruiser</div>
-                            </div>
+                        <div>
+                          <div className="item-card9-imgs">
+                            <img
+                              src={`http://139.59.81.203/images/${bike.vehicle_image}`}
+                              alt="img"
+                              className=" pt-4"
+                            />
                           </div>
-                          <div class="">
-                            <div class="item-card9 mt-1">
-                              <a href="property-details.html" class="text-dark">
-                                <h4 class="font-weight-semibold2 mt-2 mb-2 text-center">
-                                  {bike.vehicle_name}{" "}
-                                </h4>
-                              </a>
-                              <div class="mb-1 fs-12">
-                                <select
-                                 value={locationId}
+                          <div className="item-tags">
+                            <div className="bg-success tag-option">
+                              Hotseller
+                            </div>
+                            <div className="bg-success tag-option">Cruiser</div>
+                          </div>
+                          <div className="item-card9 mt-1">
+                            <h4 className="font-weight-semibold2 mt-2 mb-2 text-center">
+                              {bike.vehicle_name}
+                            </h4>
+
+                            <div className="mb-1 fs-12">
+                              
+                              <select
                                 
-                                  onClick={(e) =>
-                                    setLocationId(e.target.value)
-                                  }
-                                 
-                                  className="w-100 px-3 py-1"
-                                  data-placeholder="Select Location"
-                                >
-                                  {activeLocations.length === 0
-                                    ? bike.price.map((locations) => (
+                                value={locationId}         
+                                className="w-100 px-3 py-1"
+                                onChange={(e) => setLocationId(e.target.value)}
+                              >
+                                {/* <option value={getLocationId(bike.price[0].location_id)} selected>{bike.price[0].location_name}</option> */}
+                                {activeLocations.length === 0
+                                  ? bike.price.map((locations) => (
+                                    
+                                      <option value={locations.location_id} selected>
+                                        {locations.location_name}
+                                      </option>
+                                    ))
+                                  : bike.price.map((locations) =>
+                                      activeLocations.filter((location) =>
+                                        locations.location_name.includes(
+                                          location
+                                        )
+                                      ) ? (
                                         <option value={locations.location_id}>
                                           {locations.location_name}
                                         </option>
-                                      ))
-                                    : bike.price.map((locations) => {
-                                        if (
-                                          activeLocations.includes(
-                                            locations.location_name
-                                          )
-                                        ) {
-                                          return (
-                                            <option
-                                              value={locations.location_id}
-                                            >
-                                              {locations.location_name}
-                                            </option>
-                                          );
-                                        }
-                                      })}
-                                </select>
-                              </div>
-
-                              <div class="d-flex flex-wrap  ">
-                                <div class="col-sm-4 center-block box-border pt-1 rounded-left-top">
-                                  <div>
-                                    <h6 class=" fs-12 book-loc-mul mb-3">
-                                      Location Timing{" "}
-                                    </h6>
-                                    <p class="fs-10 book-theme mb-0">
-                                      10AM - 8PM
-                                    </p>
-                                  </div>
-                                </div>
-
-                                <div class="col-sm-4 center-block box-border pt-1">
-                                  <h6 class=" fs-12 book-loc-mul mb-3">
-                                    Security Deposit
-                                  </h6>
-                                  <p class="fs-10 book-theme">
-                                    <i class="fa fa-inr fs-12"></i>
-                                    1500
-                                  </p>
-                                </div>
-                                <div class="col-sm-4 center-block box-border pt-1 rounded-right-top">
-                                  <h6 class=" fs-12 book-loc-mul mb-3">
-                                    {" "}
-                                    Trip
-                                    <br />
-                                    Limit{" "}
-                                  </h6>
-                                  <p class="fs-10 book-theme mb-0">
-                                    250 KM/day
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center justify-content-between">
-                                <a class=" p-2 bradius2">
-                                  {" "}
-                                  from{" "}
-                                  <span class="fs-18 ms-1 book-loc-mul font-weight-bold">
-                                    <i class="fa fa-inr fs-18"></i>
-                                    {bike.price.map((locations) => {
-                                      if (locations.location_id == locationId) {
-                                        return locations.weekday_price + "/ ";
-                                      }
-                                    })}
-                                  </span>
-                                  <span class="fs-10">24 hrs</span>{" "}
-                                </a>
-                                <button
-                                  onClick={() => getDetails(bike)}
-                                  class="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
-                                  
-                                >
-                                  Details
-                                </button>
-                              </div>
+                                      ) : (
+                                        ""
+                                      )
+                                    )}
+                              </select>
                             </div>
+                            {bike.price.map((services) => {
+                              if (services.location_id == locationId)
+                                return services.service.map((eachService) =>
+                                  eachService.day === lowerDaySelected &&
+                                  eachService.service_name === "self_pickup" &&
+                                  eachService.is_open === 1 ? (
+                                    <>
+                                      {(service_inc())}
+                                      <div className="d-flex flex-wrap  ">
+                                        <div className="col-sm-4 center-block box-border pt-1 rounded-left-top">
+                                          <div>
+                                            <h6 className=" fs-12 book-loc-mul mb-3">
+                                              Location Timing{" "}
+                                            </h6>
+                                            <p className="fs-10 book-theme mb-0">
+                                             { eachService.from_time} - {eachService.to_time  }
+                                            </p>
+                                          </div>
+                                        </div>
+
+                                        <div className="col-sm-4 center-block box-border pt-1">
+                                          <h6 className=" fs-12 book-loc-mul mb-3">
+                                            Security Deposit
+                                          </h6>
+                                          <p className="fs-10 book-theme">
+                                            <i className="fa fa-inr fs-12"></i>
+                                            {bike.price.map((advance) => {
+                                              if (
+                                                advance.location_id ==
+                                                locationId
+                                              ) {
+                                                return advance.advance_amount;
+                                              }
+                                            })}
+                                          </p>
+                                        </div>
+                                        <div className="col-sm-4 center-block box-border pt-1 rounded-right-top">
+                                          <h6 className=" fs-12 book-loc-mul mb-3">
+                                            {" "}
+                                            Trip
+                                            <br />
+                                            Limit{" "}
+                                          </h6>
+                                          <p className="fs-10 book-theme mb-0">
+                                            250 KM/day
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div className="d-flex align-items-center justify-content-between">
+                                        <a className=" p-2 bradius2">
+                                          from
+                                          <span className="fs-18 ms-1 book-loc-mul font-weight-bold">
+                                            <i className="fa fa-inr fs-18"></i>
+                                            {bike.price.map((locations) => {
+                                              if (
+                                                locations.location_id ==
+                                                locationId
+                                              ) {
+                                                return (
+                                                  locations.weekday_price + "/ "
+                                                );
+                                              }
+                                            })}
+                                          </span>
+                                          <span className="fs-10">24 hrs</span>
+                                        </a>
+                                        <button
+                                          onClick={() => getDetails(bike)}
+                                          className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
+                                        >
+                                          Details
+                                        </button>
+                                      </div>
+                                    </>
+                                  ) : eachService.day === lowerDaySelected &&
+                                    eachService.service_name === "go_deliver" &&
+                                    eachService.is_open === 1 &&
+                                    service_found === 0 ? (
+                                    <>
+                                      <div className="d-flex flex-wrap  ">
+                                        <div className="col-sm-4 center-block box-border pt-1 rounded-left-top">
+                                          <div>
+                                            <h6 className=" fs-12 book-loc-mul mb-3">
+                                              Location Timing{" "}
+                                            </h6>
+                                            <p className="fs-10 book-theme mb-0">
+                                              10AM - 8PM
+                                            </p>
+                                          </div>
+                                        </div>
+
+                                        <div className="col-sm-4 center-block box-border pt-1">
+                                          <h6 className=" fs-12 book-loc-mul mb-3">
+                                            Security Deposit
+                                          </h6>
+                                          <p className="fs-10 book-theme">
+                                            <i className="fa fa-inr fs-12"></i>
+                                            {bike.price.map((advance) => {
+                                              if (
+                                                advance.location_id ==
+                                                locationId
+                                              ) {
+                                                return advance.advance_amount;
+                                              }
+                                            })}
+                                          </p>
+                                        </div>
+                                        <div className="col-sm-4 center-block box-border pt-1 rounded-right-top">
+                                          <h6 className=" fs-12 book-loc-mul mb-3">
+                                            {" "}
+                                            Trip
+                                            <br />
+                                            Limit{" "}
+                                          </h6>
+                                          <p className="fs-10 book-theme mb-0">
+                                            250 KM/day
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div className="d-flex align-items-center justify-content-between">
+                                        <a className=" p-2 bradius2">
+                                          from
+                                          <span className="fs-18 ms-1 book-loc-mul font-weight-bold">
+                                            <i className="fa fa-inr fs-18"></i>
+                                            {bike.price.map((locations) => {
+                                              if (
+                                                locations.location_id ==
+                                                locationId
+                                              ) {
+                                                return (
+                                                  locations.weekday_price + "/ "
+                                                );
+                                              }
+                                            })}
+                                          </span>
+                                          <span className="fs-10">24 hrs</span>
+                                        </a>
+                                        <button
+                                          onClick={() => getDetails(bike)}
+                                          className="btn btn-primary waves-effect waves-light mt-3 margin-left-sm"
+                                        >
+                                          Details
+                                        </button>
+                                      </div>
+                                    </>
+                                  ) : (
+                                    ""
+                                  )
+                                );
+                            })}
                           </div>
                         </div>
                       </div>

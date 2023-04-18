@@ -3,8 +3,8 @@ function Header() {
     <>
       <div className="header-main header-main-color fixed-top bg-white">
         <div className="top-bar bg-primary">
-          <div className="container flex">
-            <ul className="flex social-md">
+          <div className="container d-flex justify-content-between">
+            <ul className="flex social-md list-unstyled mb-0">
               <li>
                 <a className="social-icon text-muted" href="">
                   <i className="fe fe-facebook"></i>

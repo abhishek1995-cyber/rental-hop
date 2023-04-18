@@ -9,9 +9,10 @@ import "./styles/index.css"
 function App() {
     return <>
         <Header />
-        {/* <ProductDetail /> */}
+        <ProductDetail />
         <ProductPage/>
         {/* <Login /> */}
+        {/* <Homepage/> */}
         <Footer />
     </>
     

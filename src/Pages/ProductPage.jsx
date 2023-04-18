@@ -29,6 +29,8 @@ function ProductPage() {
 
     const [sortData, setSortData] = useState(bikes)
 
+    const [daySelected,setDaySelected] = useState("")
+   
     // get list of all cities on select input
     const getCities = async () => {
         const res = await fetch("http://139.59.81.203/api/get-cities",
@@ -51,7 +53,7 @@ function ProductPage() {
     }
 
     // It will will search for time and city
-    const handleSearch = async (ct,st,dt) => {
+    const handleSearch = async (cityID,st,dt,day) => {
         const res = await fetch("http://139.59.81.203/api/get-bikes", {
             method: "POST",
             headers: {
@@ -69,12 +71,13 @@ function ProductPage() {
         const data = await res.json();
         setBikes(data.prices);
         setSortData(data.prices)
-        getLocation(ct)
-          
+        getLocation(cityID)
+        setDaySelected(day)
+              
     }
 
     // get locations of city selected 
-    const getLocation = async (cityId) => {
+    const getLocation = async (cityID) => {
         const res = await fetch("http://139.59.81.203/api/get-locations",
             {
                 method: "POST",
@@ -95,9 +98,10 @@ function ProductPage() {
         if (isChecked) {
             //Add checked item into checkList
             setActiveLocations([...activeLocations, value]);
+            
         } else {
             //Remove unchecked item from checkList
-            const filteredList = activeLocations.filter((item) => item !== value);
+            const filteredList = activeLocations.filter((item) => item != value);
             setActiveLocations(filteredList)
         }
     }
@@ -105,8 +109,8 @@ function ProductPage() {
 
     function sortedData() {
         let arr = [...bikes];
-        if (activeLocations.length ) {
-            arr = sortData.filter((bike) => bike.location_name.some((location) => activeLocations.includes(location))
+        if (activeLocations.length > 0) {
+            arr = arr.filter((bike) => bike.location_name.some((location) => activeLocations.includes(location))
             );
            
             setSortData(arr)
@@ -130,15 +134,14 @@ function ProductPage() {
 
 
     useEffect(() => {
-        getCities();
-       
+        getCities();   
         
     }, []);
 
 
     return (
         <>
-            <section className="sptb-sm bg-white mt-5">
+            <section className="sptb-sm bg-white mt-7">
                 <div className=" container sm-p0">
 
                     <>
@@ -162,7 +165,7 @@ function ProductPage() {
                             <Card
                                 bikes={sortData}
                                 activeLocations={activeLocations}
-                               
+                                setDaySelected={daySelected}
                             />
                         </div>
                     </>

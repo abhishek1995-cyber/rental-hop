@@ -17,7 +17,7 @@ function Product_Detail_Hero() {
                 </h3>
               </a>
               <div className="flex align-items-center row-view">
-                <ul className="flex ">
+                <ul className="flex list-unstyled">
                   <li className="me-5">
                     <a href="" className="icons fs-10">
                       <i className="fe fe-home text-muted me-1 absolute-link"></i>{" "}

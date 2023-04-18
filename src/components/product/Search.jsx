@@ -1,3 +1,4 @@
+import moment from "moment";
 import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -6,7 +7,11 @@ function Search({ cities, info, onChangeHandler, setCityId,handleSearch }) {
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
     const [citySelected, setCitySelected] = useState("");
-
+    const day = moment(startDate).format('dddd');
+    var start_date = moment(startDate);
+    var end_date = moment(endDate);
+    const total_days = end_date.diff(start_date, 'days')
+    
     return (
         <>
             <div className="tab-content card mb-4 ">
@@ -27,7 +32,7 @@ function Search({ cities, info, onChangeHandler, setCityId,handleSearch }) {
                                     <option>Search Your City</option>
 
                                     {cities?.length !== 0 && cities.map((city) => (
-                                        <option value={city.city_id}>{city.name}</option>
+                                        <option key={city.city_id} value={city.city_id}>{city.name}</option>
                                     ))
                                     }
                                 </select>
@@ -66,7 +71,7 @@ function Search({ cities, info, onChangeHandler, setCityId,handleSearch }) {
                             <div className="col-xl-3 col-lg-3 col-md-12 mb-0">
                                 <button
                                     
-                                    onClick={()=> handleSearch(citySelected,startDate,endDate)}
+                                    onClick={()=> handleSearch(citySelected,startDate,endDate,day)}
                                     className="btn btn-lg btn-block btn-primary waves-effect waves-light br-ts-md-0 br-bs-md-0"
                                 >
                                     Search Here

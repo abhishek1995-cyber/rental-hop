@@ -1,9 +1,36 @@
 import Product_detail_Hero from "../components/Product_Detail_Hero";
 import Product_detail_Footer from "../components/Product_Detail_Footer";
 import Product_detail_Sidebar from "../components/Product_Detail_Sidebar";
-import { useEffect, useLayoutEffect } from "react";
+import { useState,useEffect, useLayoutEffect } from "react";
 
 function Product_Detail() {
+
+const [vehicleDetail,setvehicleDetail] = useState(null)
+
+  const getVechileDetail = async () => {
+    const res = await fetch("http://139.59.81.203/api/get-bike-data", {
+      method: "POST",
+      headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        vehicle_id: 11,
+        vendor_id: 15,
+        location_id: 18, 
+        
+      })
+  })
+  const data = await res.json();
+  setvehicleDetail(data.vehicle_data)
+  console.log(data);
+  }
+
+  useEffect(() => {
+   getVechileDetail();
+  },[])
+
+
 
   useLayoutEffect(() => {
 

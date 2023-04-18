@@ -814,172 +814,172 @@ function Homepage() {
         </div>
       </section>
 
-      <section class="sptb ">
-			<div class="container">
-				<div class="section-title">
+      <section className="sptb ">
+			<div className="container">
+				<div className="section-title">
 					<img src="/assets/images/png/icons8-traffic.png" width="50px" />
-					<div class="spcl-heading text-primary">15+ Cities</div>
+					<div className="spcl-heading text-primary">15+ Cities</div>
 					<h2>Popular Destinations</h2>
 					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				</div>
-                <div id="myCarousel1" class="d-flex " >
-					<div class="item text-center ">
-						<div class="relative">
+                <div id="myCarousel1" className="d-flex " >
+					<div className="item text-center ">
+						<div className="relative">
 							
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround" />
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Delhi</h5>
-								<h6 class="mb-1"><b class="text-primary">240</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround" />
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Delhi</h5>
+								<h6 className="mb-1"><b className="text-primary">240</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Mumbai</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Mumbai</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Goa</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Goa</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Leh</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Leh</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Manali</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Manali</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Udaipur</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Udaipur</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Jaipur</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Jaipur</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Pune</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Pune</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Gurugram</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Gurugram</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Noida</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Noida</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Bangalore</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Bangalore</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Chandigarh</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Chandigarh</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Mussoorie</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Mussoorie</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Rishikesh</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Rishikesh</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2">Dehradun</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2">Dehradun</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
-					<div class="item text-center">
-						<div class="relative">
+					<div className="item text-center">
+						<div className="relative">
 						
-							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" class="brround"/>
-							<div class="mt-4">
-								<h5 class="font-weight-semibold2 mt-0 mb-2 ">Jaislamer</h5>
-								<h6 class="mb-0"><b class="text-primary">150</b> Bikes</h6>
+							<img src="../assets/images/locations/circle/Delhi.jpg" alt="" className="brround"/>
+							<div className="mt-4">
+								<h5 className="font-weight-semibold2 mt-0 mb-2 ">Jaislamer</h5>
+								<h6 className="mb-0"><b className="text-primary">150</b> Bikes</h6>
 							</div>
 						</div>
 					</div>
@@ -988,117 +988,117 @@ function Homepage() {
 				</div>
 			</div>
 		</section>
-        <section class="sptb bg-white relative cover-image" >
-			<div class="container">
-				<div class="">
+        <section className="sptb bg-white relative cover-image" >
+			<div className="container">
+				<div className="">
 					<img src="/assets/images/png/icons8-traffic.png" width="50px" />
-					<div class="spcl-heading text-primary">Steps of shifto</div>
-					<h2>How It <span class="text-primary">Works</span></h2>
-					<p class="">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					<div className="spcl-heading text-primary">Steps of shifto</div>
+					<h2>How It <span className="text-primary">Works</span></h2>
+					<p className="">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				</div>
-				<div class="row">
-					<div class="col-lg-7">
-						<ul class="work-steps">
+				<div className="row">
+					<div className="col-lg-7">
+						<ul className="work-steps">
 							<li>
-								<div class="step-number bg-primary-light text-primary">1</div>
-								<h5 class="font-weight-semibold2">Resgister account</h5>
+								<div className="step-number bg-primary-light text-primary">1</div>
+								<h5 className="font-weight-semibold2">Resgister account</h5>
 								<div>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
 							</li>
 							<li>
-								<div class="step-number bg-secondary-light text-secondary">2</div>
-								<h5 class="font-weight-semibold2">login account</h5>
+								<div className="step-number bg-secondary-light text-secondary">2</div>
+								<h5 className="font-weight-semibold2">login account</h5>
 								<div>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
 							</li>
 							<li>
-								<div class="step-number bg-success-light text-success">3</div>
-								<h5 class="font-weight-semibold2">Post Property Properties</h5>
+								<div className="step-number bg-success-light text-success">3</div>
+								<h5 className="font-weight-semibold2">Post Property Properties</h5>
 								<div>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
 							</li>
 							<li>
-								<div class="step-number bg-info-light text-info">4</div>
-								<h5 class="font-weight-semibold2">Give Property to rent</h5>
+								<div className="step-number bg-info-light text-info">4</div>
+								<h5 className="font-weight-semibold2">Give Property to rent</h5>
 								<div>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
 							</li>
 							<li>
-								<div class="step-number bg-warning-light text-warning">5</div>
-								<h5 class="font-weight-semibold2">Get Earnings</h5>
+								<div className="step-number bg-warning-light text-warning">5</div>
+								<h5 className="font-weight-semibold2">Get Earnings</h5>
 								<div>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
 							</li>
 						</ul>
 
 					</div>
-					<div class="col-lg-5">
-						<div class="mt-0">
-							<img src="../assets/images/banners/main.jpg" class="br-7 relative" alt=""/>
+					<div className="col-lg-5">
+						<div className="mt-0">
+							<img src="../assets/images/banners/main.jpg" className="br-7 relative" alt=""/>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-        <section class="sptb ">
-			<div class="container">
-				<div class="section-title">
+        <section className="sptb ">
+			<div className="container">
+				<div className="section-title">
 					<img src="/assets/images/png/icons8-traffic.png" width="50px" />
-					<div class="spcl-heading text-primary">Our Security Features</div>
+					<div className="spcl-heading text-primary">Our Security Features</div>
 					<h2>What Makes Us The Preferred Choice ?</h2>
 					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				</div>
-				<div class="row ">
-					<div class="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
-						<div class="">
-							<div class="mb-lg-0 mb-5">
-								<div class="service-card">
-									<div class="bg-primary-transparent icon-bg icon-service about">
-										<i class="fe fe-pocket text-primary"></i>
+				<div className="row ">
+					<div className="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
+						<div className="">
+							<div className="mb-lg-0 mb-5">
+								<div className="service-card">
+									<div className="bg-primary-transparent icon-bg icon-service about">
+										<i className="fe fe-pocket text-primary"></i>
 									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold2 mb-2">Renters Trust Us</h4>
-										<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
-						<div class="">
-							<div class="mb-sm-0 mb-5">
-								<div class="service-card">
-									<div class="bg-secondary-transparent icon-bg icon-service about">
-										<i class="fe fe-thumbs-up text-secondary"></i>
-									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold2 mb-2">Renters Prefer Us</h4>
-										<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+									<div className="servic-data mt-3">
+										<h4 className="font-weight-semibold2 mb-2">Renters Trust Us</h4>
+										<p className="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
-						<div class="">
-							<div class="mb-sm-0 mb-5">
-								<div class="service-card">
-									<div class="bg-success-transparent icon-bg icon-service about">
-										<i class="fe fe-file-text text-success"></i>
+					<div className="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
+						<div className="">
+							<div className="mb-sm-0 mb-5">
+								<div className="service-card">
+									<div className="bg-secondary-transparent icon-bg icon-service about">
+										<i className="fe fe-thumbs-up text-secondary"></i>
 									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold2 mb-2">Maximum Choices</h4>
-										<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+									<div className="servic-data mt-3">
+										<h4 className="font-weight-semibold2 mb-2">Renters Prefer Us</h4>
+										<p className="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
-						<div class="">
-							<div class="">
-								<div class="service-card">
-									<div class="bg-info-transparent icon-bg icon-service about">
-										<i class="fe fe-users text-info"></i>
+					<div className="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
+						<div className="">
+							<div className="mb-sm-0 mb-5">
+								<div className="service-card">
+									<div className="bg-success-transparent icon-bg icon-service about">
+										<i className="fe fe-file-text text-success"></i>
 									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold2 mb-2">Expert Guidance</h4>
-										<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+									<div className="servic-data mt-3">
+										<h4 className="font-weight-semibold2 mb-2">Maximum Choices</h4>
+										<p className="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="col-lg-3 col-md-6 col-sm-6 card-mobile-view">
+						<div className="">
+							<div className="">
+								<div className="service-card">
+									<div className="bg-info-transparent icon-bg icon-service about">
+										<i className="fe fe-users text-info"></i>
+									</div>
+									<div className="servic-data mt-3">
+										<h4 className="font-weight-semibold2 mb-2">Expert Guidance</h4>
+										<p className="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
 									</div>
 								</div>
 							</div>
@@ -1107,94 +1107,94 @@ function Homepage() {
 				</div>
 			</div>
         </section>
-        <section class="sptb">
-				<div class="container">
-					<div class="section-title">
+        <section className="sptb">
+				<div className="container">
+					<div className="section-title">
 						<img src="/assets/images/png/icons8-traffic.png" width="50px" />
-						<div class="spcl-heading text-primary">Latest Blog</div>
+						<div className="spcl-heading text-primary">Latest Blog</div>
 						<h2>Article News</h2>
 						<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 					</div>
-					<div class="row">
-						<div id="myCarousel1" class="d-flex">
-						<div class="">
-							<div class="card overflow-hidden ">
-								<div class="item7-card-img">
+					<div className="row">
+						<div id="myCarousel1" className="d-flex">
+						<div className="">
+							<div className="card overflow-hidden ">
+								<div className="item7-card-img">
 									<a href="blog-details.html"></a>
-									<img src="../assets/images/products/f1.png" alt="img" class=""/>
+									<img src="../assets/images/products/f1.png" alt="img" className=""/>
 								</div>
-								<div class="card-body p-1">
-									<div class="item7-card-desc flex mb-1 fs-11 ">
-										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Dec-03-2021</a>
-										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
-										<div class="ms-auto">
-											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>4 Comments</a>
+								<div className="card-body p-1">
+									<div className="item7-card-desc flex mb-1 fs-11 ">
+										<a href="" className="text-muted"><i className="fe fe-calendar text-muted me-2"></i>Dec-03-2021</a>
+										<a href="" className="text-muted"><i className="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<div className="ms-auto">
+											<a href="" className="text-muted me-0"><i className="fe fe-message-circle text-muted me-2"></i>4 Comments</a>
 										</div>
 									</div>
-									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Apartment For Rent</h4></a>
-									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem	</p>
-									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" className="text-dark"><h4 className="font-weight-semibold2 mb-2">Apartment For Rent</h4></a>
+									<p className="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem	</p>
+									<a href="" className="btn btn-primary btn-sm waves-effect waves-light">Read More<i className="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="">
-							<div class="card overflow-hidden ">
-								<div class="item7-card-img">
+						<div className="">
+							<div className="card overflow-hidden ">
+								<div className="item7-card-img">
 									<a href="blog-details.html"></a>
-									<img src="../assets/images/products/j2.png" alt="img" class=""/>
+									<img src="../assets/images/products/j2.png" alt="img" className=""/>
 								</div>
-								<div class="card-body p-1">
-									<div class="item7-card-desc d-flex mb-1 fs-11">
-										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Nov-28-2021</a>
-										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
-										<div class="ms-auto">
-											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>2 Comments</a>
+								<div className="card-body p-1">
+									<div className="item7-card-desc d-flex mb-1 fs-11">
+										<a href="" className="text-muted"><i className="fe fe-calendar text-muted me-2"></i>Nov-28-2021</a>
+										<a href="" className="text-muted"><i className="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<div className="ms-auto">
+											<a href="" className="text-muted me-0"><i className="fe fe-message-circle text-muted me-2"></i>2 Comments</a>
 										</div>
 									</div>
-									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Home  For Rent</h4></a>
-									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
-									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" className="text-dark"><h4 className="font-weight-semibold2 mb-2">Home  For Rent</h4></a>
+									<p className="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
+									<a href="" className="btn btn-primary btn-sm waves-effect waves-light">Read More<i className="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="">
-							<div class="card overflow-hidden ">
-								<div class="item7-card-img">
+						<div className="">
+							<div className="card overflow-hidden ">
+								<div className="item7-card-img">
 									<a href="blog-details.html"></a>
-									<img src="../assets/images/products/b2.png" alt="img" class=""/>
+									<img src="../assets/images/products/b2.png" alt="img" className=""/>
 								</div>
-								<div class="card-body p-1">
-									<div class="item7-card-desc d-flex mb-1 fs-11">
-										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Nov-19-2021</a>
-										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
-										<div class="ms-auto">
-											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>8 Comments</a>
+								<div className="card-body p-1">
+									<div className="item7-card-desc d-flex mb-1 fs-11">
+										<a href="" className="text-muted"><i className="fe fe-calendar text-muted me-2"></i>Nov-19-2021</a>
+										<a href="" className="text-muted"><i className="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<div className="ms-auto">
+											<a href="" className="text-muted me-0"><i className="fe fe-message-circle text-muted me-2"></i>8 Comments</a>
 										</div>
 									</div>
-									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Luxury Home  For Rent</h4></a>
-									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
-									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" className="text-dark"><h4 className="font-weight-semibold2 mb-2">Luxury Home  For Rent</h4></a>
+									<p className="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
+									<a href="" className="btn btn-primary btn-sm waves-effect waves-light">Read More<i className="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
 						
-						<div class="">
-							<div class="card overflow-hidden ">
-								<div class="item7-card-img h-100">
+						<div className="">
+							<div className="card overflow-hidden ">
+								<div className="item7-card-img h-100">
 									<a href="blog-details.html"></a>
-									<img src="../assets/images/products/v2.png" alt="img" class=""/>
+									<img src="../assets/images/products/v2.png" alt="img" className=""/>
 								</div>
-								<div class="card-body p-1">
-									<div class="item7-card-desc d-flex mb-1 fs-11">
-										<a href="" class="text-muted"><i class="fe fe-calendar text-muted me-2"></i>Dec-10-2021</a>
-										<a href="" class="text-muted"><i class="fe fe-user text-muted me-2"></i>Nissy Sten</a>
-										<div class="ms-auto">
-											<a href="" class="text-muted me-0"><i class="fe fe-message-circle text-muted me-2"></i>1 Comments</a>
+								<div className="card-body p-1">
+									<div className="item7-card-desc d-flex mb-1 fs-11">
+										<a href="" className="text-muted"><i className="fe fe-calendar text-muted me-2"></i>Dec-10-2021</a>
+										<a href="" className="text-muted"><i className="fe fe-user text-muted me-2"></i>Nissy Sten</a>
+										<div className="ms-auto">
+											<a href="" className="text-muted me-0"><i className="fe fe-message-circle text-muted me-2"></i>1 Comments</a>
 										</div>
 									</div>
-									<a href="" class="text-dark"><h4 class="font-weight-semibold2 mb-2">Deluxe House For Rent</h4></a>
-									<p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
-									<a href="" class="btn btn-primary btn-sm waves-effect waves-light">Read More<i class="fe fe-chevrons-right ms-1"></i></a>
+									<a href="" className="text-dark"><h4 className="font-weight-semibold2 mb-2">Deluxe House For Rent</h4></a>
+									<p className="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem,Ut enim minima veniam, quis nostrum exercitationem</p>
+									<a href="" className="btn btn-primary btn-sm waves-effect waves-light">Read More<i className="fe fe-chevrons-right ms-1"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1203,28 +1203,28 @@ function Homepage() {
 					</div>
 				</div>
 			</section>
-            <section class="sptb bg-white cover-image ht-mv" >
-			<div class="container">
-                <div class="row">
-					<div class="col-lg-4">
-						<div class="main-shift-img main-shift-img2">
+            <section className="sptb bg-white cover-image ht-mv" >
+			<div className="container">
+                <div className="row">
+					<div className="col-lg-4">
+						<div className="main-shift-img main-shift-img2">
 							
-							<img src="../assets/images/other/app.jpg" class="br-7 relative" alt=""/>
+							<img src="../assets/images/other/app.jpg" className="br-7 relative" alt=""/>
 						</div>
 					</div>
-					<div class="col-lg-8">
-						<div class="mt-4 mt-xl-7">
-							<div class="section-title pb-0">
+					<div className="col-lg-8">
+						<div className="mt-4 mt-xl-7">
+							<div className="section-title pb-0">
 								<img src="/assets/images/png/icons8-traffic.png" width="50px"/> 
-								<div class="spcl-heading text-primary">App download</div>
-								<h2 class="leading-tight font-weight-semibold2"> Download App</h2>
-								<p class="mt-3">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+								<div className="spcl-heading text-primary">App download</div>
+								<h2 className="leading-tight font-weight-semibold2"> Download App</h2>
+								<p className="mt-3">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
 							</div>
-							<div class="text-wrap mt-5">
-								<div class="btn-list">
-									<a href="" class="btn btn-primary btn-lg mb-sm-0 waves-effect waves-light"><i class="fa fa-apple fa-1x me-2"></i> App Store</a>
-									<a href="" class="btn btn-secondary btn-lg mb-sm-0 waves-effect waves-light"><i class="fa fa-android fa-1x me-2"></i> Google Play</a>
-									<a href="" class="btn btn-success btn-lg mb-0 waves-effect waves-light"><i class="fa fa-windows fa-1x me-2"></i> Windows</a>
+							<div className="text-wrap mt-5">
+								<div className="btn-list">
+									<a href="" className="btn btn-primary btn-lg mb-sm-0 waves-effect waves-light"><i className="fa fa-apple fa-1x me-2"></i> App Store</a>
+									<a href="" className="btn btn-secondary btn-lg mb-sm-0 waves-effect waves-light"><i className="fa fa-android fa-1x me-2"></i> Google Play</a>
+									<a href="" className="btn btn-success btn-lg mb-0 waves-effect waves-light"><i className="fa fa-windows fa-1x me-2"></i> Windows</a>
 								</div>
 							</div>
 						</div>
